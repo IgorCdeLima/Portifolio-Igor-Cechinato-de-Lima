@@ -1,8 +1,105 @@
 @charset "UTF-8";
 
+:root {
+    --azul1 :#007ECD;
+    --azul2: #006DB0;
+    --azul3: #005B93;
+    --azul4: #004976;
+    --azul5: #003759;
+    --azul6: #00253B;
+    --azul7: #00131E;
+
+    --red1: #CD0000;
+    --red2: #B00000;
+    --red3: #930000;
+    --red4: #750000;
+    --red5: #580000;
+    --red6: #3C0000;
+    --red7: #1E0000;
+
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
     border: 1px solid black;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+header {
+    background-color: var(--azul6);
+    height: auto;
+    text-align: right;
+    border-radius: 0px 0px 5px 5px;
+}
+header > nav {
+    height: auto;
+    margin: auto;
+}
+header > nav > a {
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: large;
+
+    text-decoration: none;
+    color: #fff;
+}
+header > nav> a:hover {
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #007ecd2d;
+    background-color: var(--azul2);
+    font-size: large;
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+    margin-right: 20px;
+    padding: 5px;
+     
+}
+
+/*Main*/
+main {
+    min-width: 300px;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+}
+
+main > section#history > article {
+    margin: auto;
+    padding: 10px;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section#history > article > div#biography {
+    max-width: 1024px;
+    min-width: auto;
+    margin: auto;
+}
+main section#history > article > div#biography > p {
+    max-width: 800px;
+    min-width: auto;
+}
+
+main > section#history > article > div#imageperfil {
+    display: inline-block;
+    margin:auto;
+    text-align: center;
+    padding: 10px;
+}
+main > section#history > article > div#imageperfil > picture > img {
+    padding: 10px;
+    height: auto;
+    width: auto;
 }
 
