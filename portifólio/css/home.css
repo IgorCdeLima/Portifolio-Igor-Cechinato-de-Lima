@@ -87,18 +87,32 @@ main section#history > article > div#biography {
     min-width: auto;
     margin: auto;
     margin-left:0px;
+    padding: 3px;
+}
+main section#history > article > div#biography > h1 {
+    padding: 3px;
+    font-size: 2em;
+}
+main section#history > article > div#biography > h2 {
+    padding: 3px;
+}
+main section#history > article > div#biography > h3 {
+    padding: 3px;
 }
 main section#history > article > div#biography > p {
     max-width: 800px;
-    min-width: auto;
+    text-align: justify;
 }
 
 main > section#history > article > div#imageperfil {
     display: inline-block;
     margin:auto;
 }
+
 main > section#history > article > div#imageperfil > picture > img {
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
+    max-width: 300px;
+    min-width: 230px;
 }
 
