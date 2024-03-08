@@ -1,48 +1,61 @@
 @charset "UTF-8";
 
 :root {
-    --azul1 :#007ECD;
-    --azul2: #006DB0;
-    --azul3: #005B93;
-    --azul4: #004976;
-    --azul5: #003759;
-    --azul6: #00253B;
-    --azul7: #00131E;
+    --fundo0:#FFFFE6;
+    --fundo1:#FFFFDC;
+    --fundo2:#F2F2D2;
+    --fundo3:#FFFFC8;
+    --fundo4:#FFFFBE;
+    --fundo5:#FFFFB4;
+    --fundo6:#FFFFAA; 
+    --fundo7:#FFFFA0;
+    --fundo8:#FFFF96;
+    --fundo9:#FFFF8C;
 
-    --red1: #CD0000;
-    --red2: #B00000;
-    --red3: #930000;
-    --red4: #750000;
-    --red5: #580000;
-    --red6: #3C0000;
-    --red7: #1E0000;
+    --destaque0:#00A2FF;
+    --destaque1:#0091E6;
+    --destaque2:#0081CC;
+    --destaque3:#0071B3;
+    --destaque4:#006199;
+    --destaque5:#005180;
+    --destaque6:#004166;
+    --destaque7:#00304D;
+    --destaque8:#002033;
+    --destaque9:#00101A;
+
+
+    --azul: #C9E3F2;
+
+    --vermelho: #750002;
+    --vermelho2: #750002b7;
 
 }
-
-
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px solid black;
     line-height: 1.5em;
+
 }
 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo1) ;
 }
 
 /*Header*/
 header {
-    background-image: linear-gradient(to right, var(--azul2) 40%, var(--azul6));
+    background-color: var(--destaque4);
     height: auto;
     text-align: right;
     border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.200);
 }
 header > nav {
     height: auto;
     margin: auto;
-    margin-right: 20px;
+    margin-right: 50px;
+
 }
 header > nav > a {
     display: inline-block;
@@ -57,8 +70,8 @@ header > nav > a {
 header > nav> a:hover {
     border-radius: 5px;
     box-shadow: 1px 1px 10px #007ecd2d;
-    background-color: var(--azul2);
-    color: var(--azul6);
+    background-color: var(--destaque2);
+    color: var(--destaque9);
     font-size: large;
     display: inline-block;
     margin: 10px 20px 10px 20px;
@@ -69,15 +82,19 @@ header > nav> a:hover {
 
 /*Main*/
 main {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     min-width: none;
     max-width: 1400px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     height: auto;
     padding: 5px;
+    
 }
 main section {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /*history*/
@@ -87,12 +104,17 @@ main > section#history > article {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 main section#history > article > div#biography {
     max-width: 1024px;
     min-width: none;
     margin: auto;
-    padding: 3px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--fundo0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
 main section#history > article > div#biography > h1 {
     padding: 3px;
@@ -113,13 +135,33 @@ main > section#history > article > picture{
     display: inline-block;
     margin:auto;
     text-align: center;
+    padding: 10px;
+    background-color: var(--fundo0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25)
 }
 main > section#history > article > picture > img {
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
     max-width: 90%;
 }
 
+/*contato*/
+main section#history > article > div#biography > nav {
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+main section#history > article > div#biography > nav > a {
+    padding: 5px;
+    margin-left: 10px;
+    display: inline-flex;
+    border-radius: 3px;
+    background-color: var(--fundo3);
+    box-shadow: 0px0px 5px rgba(0, 0, 0, 0.25);
+}
+main section#history > article > div#biography > nav > a > img {
+    width: 30px;
+    height: 30px;
+}
 /*Skils*/
 
 main > section#skils {
@@ -127,17 +169,39 @@ main > section#skils {
     flex-direction: row;
     flex-wrap: wrap;
     
+    
 }
 main > section#skils  div {
     max-width: 200px;
     max-height: 300px;
     min-height: 150px;
-
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
+    border-radius: 5px;
+    background-color: var(--fundo0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
+main > section#skils  div:hover {
+    background-color:var(--fundo2) ;
+    color: var(--destaque9);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+main > section#skils > div  h2{
+    padding: 3px;
+    text-align: center;
+}
+main > section#skils > div hr {
+    margin-top: 5px;
+}
+main> section#skils > div p {
+    padding: 3px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
 
 /*projetos*/
 
@@ -150,29 +214,61 @@ main > section#projetos {
 }
 
 main > section#projetos > div {
-    background-color: rgba(255, 255, 255, 0.514);
+    background-color: var(--fundo0);
     min-width: 240px;
     width: 500px;
     height: 400px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 20px;
     border-radius: 10px;
     text-align: center;
-    overflow-y: scroll;
-    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
-main > section#projetos > div > iframe {
-    position: absolute ;   
-    display: block;
-    left: -45%;
-    top: -40%;
-    max-width: 190%;
-    border-radius: 20px;
+main > section#projetos > div:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    background-color: var(--fundo2);
+    color: var(--destaque2);
+} 
 
-
-}
 main > section#projetos > div > p {
+    margin: 190px 0px ;
+    height: 30px;
+    background-color: var(--azul);
+    font-size: larger;
+}
+
+/*ferramentas*/
+main > section#ferramentas {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    text-align: center;
+    
+}
+main > section#ferramentas > div {
+    width: 150px;
+    height: auto;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25)
+}
+main > section#ferramentas > div > img {
+    padding: 1px;
+    border-radius: 3px;
+}
+main > section#ferramentas > div:hover {
+    background-color: var(--fundo3);
+    color: var(--destaque7);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
+}
+/*rodapé*/
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--destaque9);
+    color: var(--azul);
 }
