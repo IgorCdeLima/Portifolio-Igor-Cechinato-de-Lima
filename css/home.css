@@ -96,15 +96,32 @@ main {
 main section {
     margin-top: 50px;
 }
-
+.titulo {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.listra {
+    height: 3px;
+    border: transparent;
+    margin-left: 30px;
+    background-image: linear-gradient(to right, black, transparent 70%);
+}
+.flexbox {
+    max-width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
 /*history*/
 
 main > section#history > article {
     margin: auto;
+    margin-bottom: 20px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
 }
 main section#history > article > div#biography {
     max-width: 1024px;
@@ -165,14 +182,7 @@ main section#history > article > div#biography > nav > a > img {
 }
 /*Skils*/
 
-main > section#skils {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    
-}
-main > section#skils  div {
+main > section#skils > .flexbox  div {
     max-width: 200px;
     max-height: 300px;
     min-height: 150px;
@@ -184,19 +194,19 @@ main > section#skils  div {
     background-color: var(--fundo0);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
-main > section#skils  div:hover {
+main > section#skils > .flexbox  div:hover {
     background-color:var(--fundo2) ;
     color: var(--destaque9);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
-main > section#skils > div  h2{
+main > section#skils > .flexbox > div  h2{
     padding: 3px;
     text-align: center;
 }
-main > section#skils > div hr {
+main > section#skils > .flexbox > div hr {
     margin-top: 5px;
 }
-main> section#skils > div p {
+main > section#skils > .flexbox > div p {
     padding: 3px;
     text-align: center;
     margin-top: 5px;
@@ -206,15 +216,9 @@ main> section#skils > div p {
 
 /*projetos*/
 
-main > section#projetos {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 5px;
-}
 
-main > section#projetos > div {
+
+main > section#projetos> .flexbox > div {
     background-color: var(--fundo0);
     min-width: 240px;
     width: 500px;
@@ -226,13 +230,13 @@ main > section#projetos > div {
     text-align: center;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
-main > section#projetos > div:hover {
+main > section#projetos> .flexbox > div:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
     background-color: var(--fundo2);
     color: var(--destaque2);
 } 
 
-main > section#projetos > div > p {
+main > section#projetos> .flexbox > div > p {
     margin: 190px 0px ;
     height: 30px;
     background-color: var(--azul);
@@ -240,14 +244,11 @@ main > section#projetos > div > p {
 }
 
 /*ferramentas*/
-main > section#ferramentas {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
+main > section#ferramentas> .flexbox { 
     text-align: center;
     
 }
-main > section#ferramentas > div {
+main > section#ferramentas> .flexbox > div {
     width: 150px;
     height: auto;
     margin: auto;
@@ -257,11 +258,11 @@ main > section#ferramentas > div {
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25)
 }
-main > section#ferramentas > div > img {
+main > section#ferramentas> .flexbox > div > img {
     padding: 1px;
     border-radius: 3px;
 }
-main > section#ferramentas > div:hover {
+main > section#ferramentas> .flexbox > div:hover {
     background-color: var(--fundo3);
     color: var(--destaque7);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
