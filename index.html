@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igor - portifólio</title>
     <link rel="stylesheet" href="css/home.css">
+    <script src="javascript/JavaScript1.js"></script>
 </head>
 <body>
-    <header>
+    <header id="init">
         <nav>
-            <a href="#history">Quem sou</a>
-            <a href="#skils">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#ferramentas">Ferramentas</a>
+            <a href="#history">QUEM SOU</a>
+            <a href="#skils">HABILIDADES</a>
+            <a href="#ferramentas">FERRAMENTAS</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#contato">CONTATO</a>
         </nav>
 
     </header>
     <main>
         <section id="history">
-            <article>
+            <article class="flexbox">
                 <div id="biography">
                     <h1>IGOR CECHINATO DE LIMA</h1>
-                    <h3>"Todos os homens, por natureza, tendem ao saber." Aristóteles</h3>
+                    <!--<h3>"Todos os homens, por natureza, tendem ao saber." Aristóteles</h3>-->
                     <h2>PROGRAMADOR</h2>
                     <p>
                         Sou um intusiasta na área de <strong>tecnologia</strong> e de <strong>ciências humanas</strong>. <br>
@@ -30,7 +32,12 @@
                     <nav>
                         <a href="https://github.com/IgorCdeLima" target="_blank" rel="next"><img src="imagens/github.png" alt="image GitHub"></a>
                         <a href="https://www.linkedin.com/in/igor-cechinato-de-lima-6099a7269/" target="_blank" rel="next"><img src="imagens/linkedin.png" alt="iimage linkedin"></a>
-                        <a href="#" target="_blank"><img src="imagens/gmail.png" alt="Image Gmail"></img></a>
+                        <button id="btnRedirect" target="_blank"><img src="imagens/gmail.png" alt="Image Gmail" ></img></button>
+                        <script>
+                            document.getElementById("btnRedirect").addEventListener("click", function() {
+                                window.location.href = "mailto:igor.c.l.oficial@outlook.com";
+                            });
+                            </script>
                     </nav>
                 </div>
                 
@@ -40,7 +47,6 @@
                 </picture>
             </article>
         </section>
-        
         <section id="skils">
             <h2 class="titulo">HABILIDADES</h2>
             <hr class="listra">
@@ -61,21 +67,6 @@
                     <p>Desenvolvo artigos e blogs, palestras, buscando compartilhar um pouco de meus estudos</p>
                 </div>
             </div>
-        </section>
-        
-        <section id="projetos">
-            <h2 class="titulo">PROJETOS</h2>
-            <hr class="listra">
-            <div class="flexbox">
-                <div class="projetos" id="projeto_1">
-                    <p>EM BREVE</p>
-                </div>
-                <div class="projetos" id="projeto_2">
-                    <p>EM BREVE</p>
-                </div>
-            </div>
-            
-
         </section>
         <section id="ferramentas">
             <h2 class="titulo">FERRAMENTAS</h2>
@@ -107,11 +98,53 @@
                 </div>
             </div>
         </section>
+        <section id="projetos">
+            <h2 class="titulo">PROJETOS</h2>
+            <hr class="listra">
+            <div class="flexbox">
+                <div class="projetos" id="projeto_1">
+                    <p>EM BREVE</p>
+                </div>
+                <div class="projetos" id="projeto_2">
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            
+
+        </section>
     </main>
     <footer>
-        <p>Site desenvolvido por Igor Cechinato de Lima</p>
+        <section id="contato">
+            <h2>Fale Comigo</h2>
+            <p>Resta alguma dúvida? Preencha os campos abaixos que em breve entraremos em contato.</p>
+            <form name="meu_form" id="meu_form">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nomeid" placeholder="nome" required="required" name="nome" />
+                </div>
+                
+                <div>
+                    <label for="fone">Fone</label>
+                    <input type="tel" id="foneid" placeholder="(_ _) _ _ _ _ _ _ _ _" name="fone" />
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="emailid" placeholder="name@email.com" name="email" />
+                </div>
+                
+                
+                <div>
+                    <textarea placeholder="Escreva sua mensagem"></textarea></div>
+                
+                <button type="submit" class="enviar" onclick="Enviar();" value="Enviar">Enviar</button>
+                </form>
+                
+        </section>
     </footer>
-    
-    
 </body>
 </html>
+<!--
+    Referências dos sites das imagens
+    <a href="https://www.flaticon.com"</a>
+-->

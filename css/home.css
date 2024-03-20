@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --fundo0:#FFFFE6;
@@ -39,7 +41,7 @@
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: var(--fundo1) ;
 }
 
@@ -50,6 +52,7 @@ header {
     text-align: right;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.200);
+    font-family: 'Dosis', sans-serif;
 }
 header > nav {
     height: auto;
@@ -91,6 +94,7 @@ main {
     margin-bottom: 0px;
     height: auto;
     padding: 5px;
+    padding-bottom: 100px;
     
 }
 main section {
@@ -106,6 +110,7 @@ main section {
     height: 3px;
     border: transparent;
     margin-left: 30px;
+    margin-bottom: 30px;
     background-image: linear-gradient(to right, black, transparent 70%);
 }
 .flexbox {
@@ -119,9 +124,6 @@ main section {
 main > section#history > article {
     margin: auto;
     margin-bottom: 20px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 main section#history > article > div#biography {
     max-width: 1024px;
@@ -162,7 +164,7 @@ main > section#history > article > picture > img {
     max-width: 90%;
 }
 
-/*contato*/
+/*redes sociais*/
 main section#history > article > div#biography > nav {
     height: auto;
     width: auto;
@@ -177,6 +179,19 @@ main section#history > article > div#biography > nav > a {
     box-shadow: 0px0px 5px rgba(0, 0, 0, 0.25);
 }
 main section#history > article > div#biography > nav > a > img {
+    width: 30px;
+    height: 30px;
+}
+main section#history > article > div#biography > nav > button {
+    padding: 5px;
+    margin-left: 10px;
+    display: inline-flex;
+    border-radius: 3px;
+    background-color: var(--fundo3);
+    box-shadow: 0px0px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+main section#history > article > div#biography > nav > button > img {
     width: 30px;
     height: 30px;
 }
@@ -215,9 +230,6 @@ main > section#skils > .flexbox > div p {
 
 
 /*projetos*/
-
-
-
 main > section#projetos> .flexbox > div {
     background-color: var(--fundo0);
     min-width: 240px;
@@ -273,4 +285,53 @@ footer {
     padding: 5px;
     background-color: var(--destaque9);
     color: var(--azul);
+    height: auto;
+    padding: 10px;
+    padding-bottom: 30px;
+
+}
+footer > #contato > h2 {
+    font-size: 3em;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+footer > #contato > p {
+    font-size: 1.2em;
+    padding: 10px;
+}
+footer > #contato > #meu_form > div {
+    height:auto;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer > #contato > #meu_form >div > input {
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 5px;
+    border:transparent;
+    text-indent: 10px;
+}
+footer > #contato > #meu_form >div > textarea {
+    height: 100px;
+    width: 60%;
+    padding: 5px;
+    text-indent: 10px;
+    border-radius: 5px;
+}
+footer > #contato > #meu_form> .enviar {
+    padding: 7px;
+    font-size: large;
+    width: 100px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+footer > #contato > #meu_form> .enviar:hover {
+    background-color: var(--destaque6);
+    color: var(--destaque0);
 }
