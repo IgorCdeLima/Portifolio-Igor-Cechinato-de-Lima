@@ -57,7 +57,7 @@ header > nav {
     height: auto;
     margin: auto;
     margin-right: 50px;
-
+    border: 1px solid black;
 }
 header > nav > a {
     display: inline-block;
