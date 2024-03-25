@@ -229,7 +229,7 @@ main > section#skils > .flexbox > div p {
 
 
 /*projetos*/
-main > section#projetos> .flexbox > div {
+/*main > section#projetos> .flexbox > div {
     background-color: var(--fundo0);
     min-width: 240px;
     width: 500px;
@@ -246,13 +246,12 @@ main > section#projetos> .flexbox > div:hover {
     background-color: var(--fundo2);
     color: var(--destaque2);
 } 
-
 main > section#projetos> .flexbox > div > p {
     margin: 190px 0px ;
     height: 30px;
     background-color: var(--azul);
     font-size: larger;
-}
+}*/
 
 /*ferramentas*/
 main > section#ferramentas> .flexbox { 
@@ -335,3 +334,5 @@ footer > #contato > #meu_form> .enviar:hover {
     background-color: var(--destaque6);
     color: var(--destaque0);
 }
+
+
